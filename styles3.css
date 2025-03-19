@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: navy;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: yellow;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+}
+
+.sub-menu {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+.sub-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.join-btn {
+    background-color: yellow;
+    color: navy;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 3px solid yellow;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: yellow;
+    color: navy;
+    padding: 20px;
+    width: 200px;
+    font-weight: bold;
+}
