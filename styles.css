@@ -169,60 +169,6 @@ nav ul li a:hover, nav ul li a:focus {
     padding-bottom: 8px;
 }
 
-.coaches-section {
-    background-color: var(--primary);
-    color: var(--light);
-    padding: 60px 0;
-}
-
-.coaches-section .section-title {
-    color: var(--secondary);
-}
-
-.coaches-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.coach-card {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    width: 280px;
-    transition: transform 0.3s ease;
-}
-
-.coach-card:hover {
-    transform: translateY(-10px);
-}
-
-.coach-image {
-    height: 200px;
-    background-color: #ddd;
-    background-image: url('https://placeholder.pics/svg/280x200/DEDEDE/555555/coach%20photo');
-    background-size: cover;
-    background-position: center;
-}
-
-.coach-info {
-    padding: 20px;
-    color: var(--dark);
-}
-
-.coach-info h3 {
-    margin-bottom: 5px;
-    color: var(--primary);
-}
-
-.coach-info p {
-    color: var(--dark);
-    font-style: italic;
-    margin-bottom: 10px;
-}
 
 .gallery-section {
     padding: 60px 0;
@@ -428,4 +374,165 @@ footer {
     font-size: 20px;
     border-bottom: 2px solid var(--secondary);
     padding-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Coach */
+.coaches-section {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+}
+
+.coaches-section .section-title {
+    color: var(--secondary);
+    align-items: center;
+}
+
+.section-title {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.coaches-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.container-coach {
+    width: 1200px;
+    height: 200px;
+    border: 4px solid #2c3e50;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    position: relative;
+}
+.bill-section, .chris-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.bill-section {
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+.chris-section {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.name-block {
+    background-color: white;
+    border: 3px solid #3498db;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.05);
+    position: relative;
+}
+.name {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 7px;
+    width: 200px;
+}
+.name-bill {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 7px;
+    width: 200px;
+}
+.role {
+    color: #7f8c8d;
+    font-size: 1em;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+}
+.circle img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.coaching-staff-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 3px solid #c4c4c4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+    z-index: 10;
 }
