@@ -1,0 +1,557 @@
+:root {
+    --primary: #00274D;
+    --secondary: #FFCB05;
+    --accent: #FF6B00;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: var(--primary);
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 90px;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--light);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: rgba(255,255,255,0.1);
+    color: var(--secondary);
+}
+
+nav ul .logo {
+    margin: 0 20px;
+}
+
+.hero {
+    background: linear-gradient(to bottom, rgba(0,39,77,0.8), rgba(0,39,77,0.9)), url('imgs/Jay.png') no-repeat center center;
+    background-size: cover;
+    color: var(--light);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: var(--secondary);
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: var(--light);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.content-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary);
+}
+
+.info-columns {
+    flex: 1 1 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: calc(50% - 10px);
+    overflow: auto;
+}
+
+.info-box h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 8px;
+}
+
+.gallery-section {
+    padding: 60px 0;
+    background-color: var(--light);
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    height: 200px;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://placeholder.pics/svg/250x200/DEDEDE/555555/lacrosse%20photo');
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 25px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    flex: 1 1 600px;
+    max-width: 700px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(218, 218, 218, 0);
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background-color: #fff;
+}
+
+.join-box {
+    border: 1px solid #5c5c5c;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #e4e4e4;
+    color: #001F3F;
+}
+
+.join-box p {
+    font-size: 14px;
+}
+
+.join-btn {
+    background-color: #bdbdbd;
+    border: 1px solid #000000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.coaches-section {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+}
+
+.coaches-section .section-title {
+    color: var(--secondary);
+    align-items: center;
+}
+
+.section-title {
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.coaches-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.container-coach {
+    width: 1200px;
+    height: 200px;
+    border: 4px solid #2c3e50;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.bill-section, .chris-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.bill-section {
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.chris-section {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.name-block {
+    background-color: white;
+    border: 3px solid #3498db;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.name {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 7px;
+    width: 200px;
+}
+
+.name-bill {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 7px;
+    width: 200px;
+}
+
+.role {
+    color: #7f8c8d;
+    font-size: 1em;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3498db;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+}
+
+.circle img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.coaching-staff-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 3px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+    z-index: 10;
+}
+
+/* Responsive Design Media Queries */
+@media screen and (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        margin: 10px 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .video-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-columns {
+        max-width: 100%;
+    }
+    
+    .video-container {
+        flex-basis: 100%;
+    }
+
+    .container-coach {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .bill-section, 
+    .chris-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .name-block {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul li a,
+    .btn {
+        padding: 15px 25px;
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 24px;
+    }
+}
