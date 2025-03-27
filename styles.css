@@ -39,6 +39,11 @@ nav {
     justify-content: center;
     padding: 0;
     background-color: var(--primary);
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+
 }
 
 nav ul {
@@ -50,6 +55,8 @@ nav ul {
 
 nav ul li {
     position: relative;
+    margin: 0 90px;
+
 }
 
 nav ul li a {
@@ -67,6 +74,10 @@ nav ul li a {
 nav ul li a:hover, nav ul li a:focus {
     background-color: rgba(255,255,255,0.1);
     color: var(--secondary);
+}
+
+nav ul .logo {
+    margin: 0 20px;
 }
 
 .hero {
@@ -528,7 +539,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: 3px solid #c4c4c4;
+    border: 3px solid #3498db;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 1.2em;
