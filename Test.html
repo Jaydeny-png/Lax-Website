@@ -4,31 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marlboro HS Boys Lacrosse</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles2.css">
+    <script defer src="script2.js"></script>
 </head>
 <body>
     <header>
-        <nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <nav class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Stats</a></li>
-                <li><a href="#">Parents Club</a></li>
-                <img src="imgs/Logo.png" alt="" width="70" height="70">
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Previous Years</a></li>
+                <div class="left-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li><a href="#">Parents Club</a></li>
+                </div>
+                
+                <div class="logo-container">
+                    <img src="imgs/Logo.png" alt="Logo" width="70" height="70">
+                </div>
+                
+                <div class="right-menu">
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Previous Years</a></li>
+                </div>
             </ul>
         </nav>
-        <nav>
+        
+        <nav class="secondary-nav">
             <ul>
-                <li><a href="#">Boys Lacrosse</a></li>
-                <li><a href="#">Coaches</a></li>
-                <li><a href="#">Varsity</a></li>
-                <li><a href="#">JV</a></li>
-                <li><a href="#">Freshman/Tryouts</a></li>
+                <li class="left-item"><a href="#">Boys Lacrosse</a></li>
+                <div class="right-items">
+                    <li><a href="#">Coaches</a></li>
+                    <li><a href="#">Varsity</a></li>
+                    <li><a href="#">JV</a></li>
+                    <li><a href="#">Freshman/Tryouts</a></li>
+                </div>
             </ul>
         </nav>
+        
+        <!-- Mobile menu container -->
+        <div class="mobile-menu-container">
+            <nav class="main-nav mobile-menu">
+                <ul>
+                    <div class="left-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Stats</a></li>
+                        <li><a href="#">Parents Club</a></li>
+                    </div>
+                    
+                    
+                    <div class="right-menu">
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Previous Years</a></li>
+                    </div>
+                </ul>
+            </nav>
+            
+            <nav class="secondary-nav mobile-menu">
+                <ul>
+                    <li class="left-item"><a href="#">Boys Lacrosse</a></li>
+                    <div class="right-items">
+                        <li><a href="#">Coaches</a></li>
+                        <li><a href="#">Varsity</a></li>
+                        <li><a href="#">JV</a></li>
+                        <li><a href="#">Freshman/Tryouts</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section class="hero">
@@ -63,8 +112,8 @@
             </div>
 
             <br>
-            <br>
-          
+
+            <h2 class="section-title">Marlboro High School Boys Lacrosse</h2>
             
             <div class="video-section">
                 <div class="info-box">
