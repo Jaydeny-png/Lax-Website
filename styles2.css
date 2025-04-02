@@ -678,224 +678,136 @@ footer {
 
 
 
+
+
+
+
 .coaches-section {
     background-color: var(--primary);
     color: var(--light);
-    padding: 60px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 4rem 1rem;
     font-family: 'Arial', sans-serif;
-    flex-direction: column;
-    width: 100%;
-}
-
-.coaches-section .section-title {
-    color: var(--secondary);
-    text-align: center;
 }
 
 .section-title {
     color: var(--secondary);
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: bold;
+    text-align: center;
     margin-bottom: 3rem;
 }
 
 .container-coach {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     border: 4px solid #2c3e50;
     background-color: #ecf0f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+    padding: 2rem 1rem;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     position: relative;
 }
 
-.coaching-staff-title {
-    background-color: white;
-    border: 3px solid #3498db;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 20px 0;
-    text-align: center;
-    z-index: 2;
+
+
+.coaches-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 
-.bill-section, 
-.chris-section {
-    width: 100%;
+.coach-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 300px;
 }
 
-.name-block {
-    background-color: white;
-    border: 3px solid #3498db;
-    padding: 15px 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 8px rgba(0,0,0,0.05);
-    text-align: center;
-    margin-bottom: 15px;
-    width: 250px;
-    max-width: 100%;
-}
-
-.name, 
-.name-bill {
-    color: #2c3e50;
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-bottom: 7px;
-}
-
-.role {
-    color: #7f8c8d;
-    font-size: 1em;
-}
-
-.circle {
+.coach-image {
     width: 150px;
     height: 150px;
     border: 3px solid #3498db;
     border-radius: 50%;
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     box-shadow: 0 6px 8px rgba(0,0,0,0.1);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
-.circle img {
-    max-width: 100%;
-    max-height: 100%;
+.coach-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-/* Mobile and small screens (up to 480px) */
-@media (max-width: 480px) {
-    .container-coach {
-        padding: 20px 15px;
-    }
-    
-    .circle {
-        width: 120px;
-        height: 120px;
-    }
-    
-    .name-block {
-        width: 220px;
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-    }
+.coach-info {
+    background-color: white;
+    border: 3px solid #3498db;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 100%;
 }
 
-/* Small to medium screens (481px to 767px) */
-@media (min-width: 481px) and (max-width: 767px) {
-    .container-coach {
-        padding: 25px;
-    }
-    
-    .bill-section, 
-    .chris-section {
-        margin-bottom: 40px;
-    }
-    
-    .name-block {
-        width: 240px;
-    }
+.coach-name {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
 }
 
-/* Medium devices and up (768px and up) - keeping your original styling */
+.coach-role {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Tablet and above */
 @media (min-width: 768px) {
-    .container-coach {
+    .coaches-grid {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        gap: 4rem;
     }
-
-    .bill-section, 
-    .chris-section {
-        flex-direction: row;
-        width: auto;
-        margin-bottom: 0;
+    
+    .coaching-staff-title {
+        margin-bottom: 3rem;
     }
+}
 
-    .bill-section {
-        justify-content: flex-end;
-        margin-right: 180px;
+/* Desktop view enhancements */
+@media (min-width: 1024px) {
+    .container-coach {
+        padding: 3rem 2rem;
     }
-
-    .chris-section {
-        justify-content: flex-start;
-        margin-left: 50px;
-    }
-
-    .bill-section .name-block {
-        order: -1;
-        margin-right: 25px;
-        margin-bottom: 0;
-    }
-
-    .chris-section .name-block {
-        order: 1;
-        margin-left: 25px;
-        margin-bottom: 0;
-    }
-
+    
     .coaching-staff-title {
         position: absolute;
-        top: 50%;
+        top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin: 0;
-    }
-}
-
-/* Large devices (992px and up) */
-@media (min-width: 992px) {
-    .container-coach {
-        padding: 40px;
-    }
-}
-
-/* Tablets and smaller desktops (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .bill-section {
-        margin-right: 100px;
+        margin-bottom: 0;
     }
     
-    .chris-section {
-        margin-left: 30px;
-    }
-}
-
-/* Extra small screens - Fix title overlapping */
-@media (max-width: 380px) {
-    .coaching-staff-title {
-        font-size: 1em;
-        padding: 8px 15px;
+    .coaches-grid {
+        margin-top: 1.5rem;
+        gap: 6rem;
     }
     
-    .name, 
-    .name-bill {
-        font-size: 1.2em;
+    .coach-card {
+        transition: transform 0.3s ease;
     }
     
-    .role {
-        font-size: 0.9em;
+    .coach-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .coach-image {
+        width: 180px;
+        height: 180px;
     }
 }
