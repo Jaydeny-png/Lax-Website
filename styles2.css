@@ -35,6 +35,11 @@ header {
     z-index: 1000;
 }
 
+/* Desktop navigation container */
+.desktop-nav {
+    display: block;
+}
+
 /* Main navbar with centered logo */
 .main-nav {
     display: flex;
@@ -75,11 +80,12 @@ header {
     padding: 0 20px;
 }
 
-/* Secondary navbar */
+/* Secondary navbar - IMPROVED LAYOUT */
 .secondary-nav {
     display: flex;
     background-color: var(--primary);
     padding: 0 15px;
+    justify-content: center;
 }
 
 .secondary-nav ul {
@@ -89,17 +95,33 @@ header {
     padding: 0;
     margin: 0;
     max-width: 1200px;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Create more balanced spacing in secondary nav */
 .secondary-nav .left-item {
-    margin-right: auto;
-    padding-left: 15px;
+    margin-right: 30px;
+    padding-left: 0;
+    position: relative;
+}
+
+/* Add a subtle visual separator */
+.secondary-nav .left-item:after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    height: 20px;
+    width: 1px;
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-50%);
 }
 
 .secondary-nav .right-items {
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
+    gap: 20px;
 }
 
 /* Common styles for all nav links */
@@ -114,6 +136,12 @@ nav ul li a {
     font-size: 14px;
     letter-spacing: 1px;
     white-space: nowrap;
+}
+
+/* Special styling for Boys Lacrosse to make it more prominent */
+.secondary-nav .left-item a {
+    font-weight: 700;
+    padding-left: 0;
 }
 
 nav ul li a:hover, nav ul li a:focus {
@@ -131,12 +159,78 @@ nav ul li a:hover, nav ul li a:focus {
     z-index: 1001;
 }
 
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .bar {
     width: 25px;
     height: 3px;
     background-color: var(--light);
     margin: 5px 0;
     transition: 0.4s;
+}
+
+/* Mobile menu container */
+.mobile-menu-container {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: var(--primary);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.mobile-menu-container.active {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav li.divider {
+    height: 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-bottom: none;
+}
+
+.mobile-nav li a {
+    display: block;
+    color: var(--light);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.mobile-nav li a:hover, .mobile-nav li a:focus {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Prevent scrolling when mobile menu is open */
+body.no-scroll {
+    overflow: hidden;
 }
 
 /* Media queries for responsive navbar */
@@ -147,7 +241,15 @@ nav ul li a:hover, nav ul li a:focus {
     }
     
     .secondary-nav .right-items {
-        margin-right: 15px;
+        gap: 10px;
+    }
+    
+    .secondary-nav .left-item {
+        margin-right: 20px;
+    }
+    
+    .secondary-nav .left-item:after {
+        right: -10px;
     }
 }
 
@@ -156,108 +258,28 @@ nav ul li a:hover, nav ul li a:focus {
         display: block;
     }
     
-    .mobile-menu-container {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: var(--primary);
-        z-index: 1000;
-    }
-    
-    .mobile-menu-container.active {
-        display: block;
-    }
-    
-    .mobile-menu {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .main-nav, .secondary-nav {
-        padding: 0;
-    }
-    
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .secondary-nav ul {
-        align-items: center;
-    }
-    
-    .left-menu, .right-menu {
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .logo-container {
-        position: static;
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
+    .desktop-nav {
+        /* Preserve the logo in mobile view */
+        height: 60px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
-    .secondary-nav .right-items {
-        flex-direction: column;
-        width: 100%;
-        margin-right: 0;
-    }
-    
-    .secondary-nav .left-item {
-        width: 100%;
-        text-align: center;
-        padding-left: 0;
-    }
-    
-    nav ul li {
-        width: 100%;
-    }
-    
-    nav ul li a {
-        width: 100%;
-        text-align: center;
-        padding: 12px 0;
-    }
-    
-    /* Keep only logo visible on mobile, hide everything else */
-    .main-nav .left-menu, 
-    .main-nav .right-menu,
-    .secondary-nav ul {
+    .desktop-nav .main-nav, .desktop-nav .secondary-nav {
         display: none;
     }
     
-    .main-nav .logo-container {
+    .desktop-nav .logo-container {
         display: flex;
-    }
-    
-    /* Show in hamburger menu when active */
-    .mobile-menu-container.active .main-nav .left-menu,
-    .mobile-menu-container.active .main-nav .right-menu,
-    .mobile-menu-container.active .secondary-nav ul {
-        display: flex;
+        position: static;
     }
 }
 
 /* Desktop second navbar alignment */
 @media (min-width: 769px) {
-    .secondary-nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .secondary-nav .right-items {
-        display: flex;
-        gap: 30px;
-        margin-right: 15px;
-    }
-    
-    .secondary-nav .left-item {
-        margin-left: 15px;
+    .secondary-nav .right-items li:last-child {
+        margin-right: 0;
     }
 }
 
