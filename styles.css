@@ -26,6 +26,7 @@ body {
     padding: 0 20px;
 }
 
+/* Updated navbar styles */
 header {
     background-color: var(--primary);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -34,41 +35,113 @@ header {
     z-index: 1000;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    background-color: var(--primary);
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-
+/* Desktop navigation container */
+.desktop-nav {
+    display: block;
 }
 
-nav ul {
+/* Main navbar with centered logo */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    position: relative;
+}
+
+.main-nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.left-menu, .right-menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.left-menu {
+    justify-content: space-evenly;
+}
+
+.right-menu {
+    justify-content: space-evenly;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* Secondary navbar - IMPROVED LAYOUT */
+.secondary-nav {
+    display: flex;
+    background-color: var(--primary);
+    padding: 0 15px;
     justify-content: center;
 }
 
-nav ul li {
-    position: relative;
-    margin: 0 90px;
-
+.secondary-nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Create more balanced spacing in secondary nav */
+.secondary-nav .left-item {
+    margin-right: 30px;
+    padding-left: 0;
+    position: relative;
+}
+
+/* Add a subtle visual separator */
+.secondary-nav .left-item:after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    height: 20px;
+    width: 1px;
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-50%);
+}
+
+.secondary-nav .right-items {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+/* Common styles for all nav links */
 nav ul li a {
     display: block;
     color: var(--light);
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 15px 10px;
     font-weight: 600;
     transition: all 0.3s ease;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* Special styling for Boys Lacrosse to make it more prominent */
+.secondary-nav .left-item a {
+    font-weight: 700;
+    padding-left: 0;
 }
 
 nav ul li a:hover, nav ul li a:focus {
@@ -76,8 +149,138 @@ nav ul li a:hover, nav ul li a:focus {
     color: var(--secondary);
 }
 
-nav ul .logo {
-    margin: 0 20px;
+/* Mobile menu button */
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--light);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Mobile menu container */
+.mobile-menu-container {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: var(--primary);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.mobile-menu-container.active {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav li.divider {
+    height: 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-bottom: none;
+}
+
+.mobile-nav li a {
+    display: block;
+    color: var(--light);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.mobile-nav li a:hover, .mobile-nav li a:focus {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Prevent scrolling when mobile menu is open */
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Media queries for responsive navbar */
+@media (max-width: 992px) {
+    nav ul li a {
+        padding: 15px 8px;
+        font-size: 12px;
+    }
+    
+    .secondary-nav .right-items {
+        gap: 10px;
+    }
+    
+    .secondary-nav .left-item {
+        margin-right: 20px;
+    }
+    
+    .secondary-nav .left-item:after {
+        right: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    
+    .desktop-nav {
+        /* Preserve the logo in mobile view */
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .desktop-nav .main-nav, .desktop-nav .secondary-nav {
+        display: none;
+    }
+    
+    .desktop-nav .logo-container {
+        display: flex;
+        position: static;
+    }
+}
+
+/* Desktop second navbar alignment */
+@media (min-width: 769px) {
+    .secondary-nav .right-items li:last-child {
+        margin-right: 0;
+    }
 }
 
 .hero {
@@ -475,148 +678,136 @@ footer {
 
 
 
+
+
+
+
 .coaches-section {
     background-color: var(--primary);
     color: var(--light);
-    padding: 60px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 4rem 1rem;
     font-family: 'Arial', sans-serif;
-    flex-direction: column;
-}
-
-.coaches-section .section-title {
-    color: var(--secondary);
-    text-align: center;
 }
 
 .section-title {
     color: var(--secondary);
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: bold;
+    text-align: center;
     margin-bottom: 3rem;
 }
 
 .container-coach {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     border: 4px solid #2c3e50;
     background-color: #ecf0f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+    padding: 2rem 1rem;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     position: relative;
 }
 
-.coaching-staff-title {
-    background-color: white;
-    border: 3px solid #3498db;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 20px 0;
+
+
+.coaches-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 
-.bill-section, 
-.chris-section {
-    width: 100%;
+.coach-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 300px;
 }
 
-.name-block {
-    background-color: white;
-    border: 3px solid #3498db;
-    padding: 15px 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 8px rgba(0,0,0,0.05);
-    text-align: center;
-    margin-bottom: 15px;
-    width: 250px;
-}
-
-.name, 
-.name-bill {
-    color: #2c3e50;
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-bottom: 7px;
-}
-
-.role {
-    color: #7f8c8d;
-    font-size: 1em;
-}
-
-.circle {
+.coach-image {
     width: 150px;
     height: 150px;
     border: 3px solid #3498db;
     border-radius: 50%;
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     box-shadow: 0 6px 8px rgba(0,0,0,0.1);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
-.circle img {
-    max-width: 100%;
-    max-height: 100%;
+.coach-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
+.coach-info {
+    background-color: white;
+    border: 3px solid #3498db;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 100%;
+}
+
+.coach-name {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.coach-role {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Tablet and above */
 @media (min-width: 768px) {
-    .container-coach {
+    .coaches-grid {
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        gap: 4rem;
     }
-
-    .bill-section, 
-    .chris-section {
-        flex-direction: row;
-        width: auto;
-        margin-bottom: 0;
+    
+    .coaching-staff-title {
+        margin-bottom: 3rem;
     }
+}
 
-    .bill-section {
-        justify-content: flex-end;
-        margin-right: 180px;
+/* Desktop view enhancements */
+@media (min-width: 1024px) {
+    .container-coach {
+        padding: 3rem 2rem;
     }
-
-    .chris-section {
-        justify-content: flex-start;
-        margin-left: 50px;
-    }
-
-    .bill-section .name-block {
-        order: -1;
-        margin-right: 25px;
-        margin-bottom: 0;
-    }
-
-    .chris-section .name-block {
-        order: 1;
-        margin-left: 25px;
-        margin-bottom: 0;
-    }
-
+    
     .coaching-staff-title {
         position: absolute;
-        top: 50%;
+        top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin: 0;
+        margin-bottom: 0;
+    }
+    
+    .coaches-grid {
+        margin-top: 1.5rem;
+        gap: 6rem;
+    }
+    
+    .coach-card {
+        transition: transform 0.3s ease;
+    }
+    
+    .coach-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .coach-image {
+        width: 180px;
+        height: 180px;
     }
 }

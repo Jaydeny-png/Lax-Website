@@ -9,26 +9,72 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Stats</a></li>
-                <li><a href="#">Parents Club</a></li>
-                <img src="imgs/Logo.png" alt="" width="70" height="70">
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Previous Years</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#">Boys Lacrosse</a></li>
-                <li><a href="#">Coaches</a></li>
-                <li><a href="#">Varsity</a></li>
-                <li><a href="#">JV</a></li>
-                <li><a href="#">Freshman/Tryouts</a></li>
-            </ul>
-        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <div class="desktop-nav">
+            <!-- Main navigation -->
+            <nav class="main-nav">
+                <ul>
+                    <div class="left-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Stats</a></li>
+                        <li><a href="#">Parents Club</a></li>
+                    </div>
+                    
+                    <div class="logo-container">
+                        <img src="imgs/Logo.png" alt="Logo" width="70" height="70">
+                    </div>
+                    
+                    <div class="right-menu">
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Previous Years</a></li>
+                    </div>
+                </ul>
+            </nav>
+            
+            <!-- Secondary navigation -->
+            <nav class="secondary-nav">
+                <ul>
+                    <li class="left-item"><a href="#">Boys Lacrosse</a></li>
+                    <div class="right-items">
+                        <li><a href="#">Coaches</a></li>
+                        <li><a href="#">Varsity</a></li>
+                        <li><a href="#">JV</a></li>
+                        <li><a href="#">Freshman/Tryouts</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Single mobile menu container -->
+        <div class="mobile-menu-container">
+            <nav class="mobile-nav">
+                <ul>
+                    <!-- Primary nav items -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li><a href="#">Parents Club</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Previous Years</a></li>
+                    
+                    <!-- Divider -->
+                    <li class="divider"></li>
+                    
+                    <!-- Secondary nav items -->
+                    <li><a href="#">Boys Lacrosse</a></li>
+                    <li><a href="#">Coaches</a></li>
+                    <li><a href="#">Varsity</a></li>
+                    <li><a href="#">JV</a></li>
+                    <li><a href="#">Freshman/Tryouts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <section class="hero">
@@ -42,17 +88,13 @@
         </div>
     </section>
 
-
     <section class="content-section">
         <div class="container">
             <div class="join-box">
                 <div class="join-box-logo">
-
                     <div class="circle2">
                         <img src="imgs/NJspine.jpg" alt="Staff" style="max-width: 60px; max-height: 60px;">
                     </div>
-
-
                 </div>
                 <div class="join-box-content">
                     <div class="join-box-text">
@@ -63,8 +105,6 @@
             </div>
 
             <br>
-            <br>
-          
             
             <div class="video-section">
                 <div class="info-box">
@@ -73,7 +113,7 @@
                         <div class="carousel-slides">
                             <div class="carousel-slide">
                                 <img src="imgs/Jay.png" alt="Season Highlights">
-                                <div class="slide-caption">205 Season Highlights</div>
+                                <div class="slide-caption">2025 Season Highlights</div>
                             </div>
                             <div class="carousel-slide">
                                 <img src="imgs/DJ.jpg" alt="Team Practice">
@@ -92,7 +132,6 @@
                     </div>
                 </div>
                 
-                
                 <div class="info-columns">
                     <div class="info-box">
                         <h2>Announcements</h2>
@@ -102,7 +141,7 @@
                     </div>
                     
                     <div class="info-box">
-                        <h2>Something etc</h2>
+                        <h2>Team Stats</h2>
                         <p><strong>Current Record:</strong> 3-1</p>
                         <p><strong>Leading Scorer:</strong> Jordan Elkin (12 goals)</p>
                         <p><strong>Next Game:</strong> March 15 vs. Freehold Township</p>
@@ -110,39 +149,34 @@
                 </div>
             </div>
         </div>
-        </div>
-    </div>
-</div>
     </section>
     
-
-    <section class="coaches-section"> 
+    <section class="coaches-section">
         <h2 class="section-title">Coaches</h2>
         <div class="container-coach">
-            <div class="coaching-staff-title">Coaching Staff</div>
-            <div class="bill-section">
-    
-                <div class="name-block">
-                    <div class="name-bill">Bill Oplinger</div>
-                    <div class="role">Head Coach</div>
+            <div class="coaches-grid">
+                <div class="coach-card">
+                    <div class="coach-image">
+                        <img src="imgs/NJspine.jpg" alt="Bill Oplinger">
+                    </div>
+                    <div class="coach-info">
+                        <h3 class="coach-name">Bill Oplinger</h3>
+                        <p class="coach-role">Head Coach</p>
+                    </div>
                 </div>
-                <div class="circle">
-                    <img src="imgs/NJspine.jpg" alt="Staff">
-                </div>
-            </div>
-            <div class="chris-section">
-                <div class="circle">
-                    <img src="imgs/NJspine.jpg" alt="Christopher Ploe">
-                </div>
-                <div class="name-block">
-                    <div class="name">Christopher Ploe</div>
-                    <div class="role">Assistant Coach</div>
+                <div class="coach-card">
+                    <div class="coach-image">
+                        <img src="imgs/NJspine.jpg" alt="Christopher Ploe">
+                    </div>
+                    <div class="coach-info">
+                        <h3 class="coach-name">Christopher Ploe</h3>
+                        <p class="coach-role">Assistant Coach</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
     <section class="gallery-section">
         <div class="container">
             <h2 class="section-title">Photo Gallery</h2>
@@ -163,7 +197,7 @@
             </div>
             
             <div class="gallery-button-container">
-                <a href="Galley.html" class="btn">View Full Gallery →</a>
+                <a href="Gallery.html" class="btn">View Full Gallery →</a>
             </div>
         </div>
     </section>
@@ -172,7 +206,7 @@
         <div class="container">
             <div class="footer-content">
                 <a href="#" class="social-icon">
-                    <img src="instagram-icon.svg" alt="Instagram">
+                    <img src="imgs/instagram-icon.svg" alt="Instagram">
                 </a>
                 <div class="copyright">
                     © 2025 Marlboro High School Boys Lacrosse. All rights reserved.
@@ -180,6 +214,5 @@
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
