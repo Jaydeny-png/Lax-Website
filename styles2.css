@@ -284,7 +284,7 @@ body.no-scroll {
 }
 
 .hero {
-    background: linear-gradient(to bottom, rgba(0,39,77,0.8), rgba(0,39,77,0.9)), url('imgs/Jay.png') no-repeat center center;
+    background: linear-gradient(to bottom, rgba(0,39,77,0.8), rgba(0,39,77,0.9)), url('imgs/Team1.jpg') no-repeat center center;
     background-size: cover;
     color: var(--light);
     padding: 60px 0;
@@ -547,7 +547,7 @@ body.no-scroll {
 
 
 footer{
-    background-color: #111;
+    background-color: var(--primary);
 }
 .footerContainer{
     width: 100%;
@@ -599,7 +599,7 @@ footer{
     opacity: 1;
 }
 .footerBottom{
-    background-color: #000;
+    background-color: #000000;
     padding: 20px;
     text-align: center;
 }
@@ -999,3 +999,13 @@ footer{
         height: 180px;
     }
 }
+
+
+
+
+
+
+
+
+
+
