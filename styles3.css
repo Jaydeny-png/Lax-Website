@@ -14,10 +14,10 @@
 
 body {
   font-family: 'Montserrat', Arial, sans-serif;
-  background-color: var(--light);
   color: var(--dark);
   line-height: 1.6;
 }
+
 
 .container {
   width: 100%;
@@ -25,6 +25,16 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.container2 {
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+
+
+
 
 /* Updated navbar styles */
 header {
@@ -459,15 +469,16 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .section2-img {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
   border-radius: 2%;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .section2-img:hover {
-  transform: scale(1.05);
-  filter: blur(2px);
+  transform: scale(1.01);
+  filter: blur(1px);
 }
