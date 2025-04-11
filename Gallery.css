@@ -235,8 +235,39 @@
   
   
   
-  
-  
+
+
+body1 {
+    background: url(https://res.cloudinary.com/ritalbradley/image/upload/v1657644013/pexels-elijah-o_donnell-3473569_o7ohfd.jpg)
+    center center/cover no-repeat;
+    min-height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    transition-duration: 1s;
+}
+
+img:hover {
+    border: 5px solid #fff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
   
   
   
