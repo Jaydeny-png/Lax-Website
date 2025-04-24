@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marlboro HS Boys Lacrosse</title>
+    <title>Gallery - Marlboro HS Boys Lacrosse</title>
     <link rel="stylesheet" href="Gallery.css">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
 
+</head>
 <body>
     <header>
         <div class="hamburger-menu">
@@ -17,7 +16,7 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-
+        
         <div class="desktop-nav">
             <!-- Main navigation -->
             <nav class="main-nav">
@@ -27,25 +26,25 @@
                         <li><a href="#">Stats</a></li>
                         <li><a href="#">Parents Club</a></li>
                     </div>
-
+                    
                     <div class="logo-container">
                         <img src="imgs/Logo.png" alt="Logo" width="70" height="70">
                     </div>
-
+                    
                     <div class="right-menu">
                         <li><a href="Schedule.html">Schedule</a></li>
-                        <li><a href="#">Resources</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
                         <li><a href="#">Previous Years</a></li>
                     </div>
                 </ul>
             </nav>
-
+            
             <!-- Secondary navigation -->
             <nav class="secondary-nav">
                 <ul>
                     <li class="left-item"><a href="#">Boys Lacrosse</a></li>
                     <div class="right-items">
-                        <li><a href="index.html">Coaches</a></li>
+                        <li><a href="#coaches">Coaches</a></li>
                         <li><a href="#">Varsity</a></li>
                         <li><a href="#">JV</a></li>
                         <li><a href="#">Freshman/Tryouts</a></li>
@@ -53,8 +52,8 @@
                 </ul>
             </nav>
         </div>
-
-        <!-- Single mobile menu container -->
+        
+        <!-- Mobile menu container -->
         <div class="mobile-menu-container">
             <nav class="mobile-nav">
                 <ul>
@@ -63,15 +62,15 @@
                     <li><a href="#">Stats</a></li>
                     <li><a href="#">Parents Club</a></li>
                     <li><a href="Schedule.html">Schedule</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
                     <li><a href="#">Previous Years</a></li>
-
+                    
                     <!-- Divider -->
                     <li class="divider"></li>
-
+                    
                     <!-- Secondary nav items -->
                     <li><a href="#">Boys Lacrosse</a></li>
-                    <li><a href="index.html">Coaches</a></li>
+                    <li><a href="#coaches">Coaches</a></li>
                     <li><a href="#">Varsity</a></li>
                     <li><a href="#">JV</a></li>
                     <li><a href="#">Freshman/Tryouts</a></li>
@@ -79,122 +78,79 @@
             </nav>
         </div>
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 
-
-<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-138f5909-4fd7-4ef2-9b1c-a0d848751571" data-elfsight-app-lazy></div>
-
-
-
-
-
-
-
-
-
-
-<body1>
-    <div class="container">
-        <img src="imgs/DJ.jpg" alt="Herd of horses">
-        <img src="imgs/Dupey1.jpg" alt="Baby Elephant">
-        <img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg" alt="Koi Fish">
-        <img src="imgs/Gellis1.jpg" alt="Ibis Bird">
-        <img src="imgs/GoodSports.jpg" alt="Lemur">
-        <img src="imgs/Jay.png" alt="Berber Monkeys">
-        <img src="imgs/Mason1.jpg" alt="Herd of horses">
-        <img src="imgs/Muhlbach1.jpg" alt="Baby Elephant">
-        <img src="imgs/Shane1.jpg" alt="Koi Fish">
-        <img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg" alt="Ibis Bird">
-        <img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg" alt="Lemur">
-        <img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg" alt="Berber Monkeys">
-    </div>
-</body1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="gallery-section">
+    <section class="gallery-page">
         <div class="container">
-            <h2 class="section-title">Photo Gallery</h2>
-            
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <img src="imgs/Muhlbach1.jpg" alt="">
-                    <div class="gallery-caption"></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="imgs/Shane1.jpg" alt="">
-                    <div class="gallery-caption"></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="imgs/Mason1.jpg" alt="">
-                    <div class="gallery-caption"></div>
-                </div>
-                <div class="gallery-item">
-                    <img src="imgs/Gellis1.jpg" alt="">
-                    <div class="gallery-caption"></div>
-                </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="game">Game Highlights</button>
+                <button class="filter-btn" data-filter="practice">Practice</button>
+                <button class="filter-btn" data-filter="team">Team Photos</button>
             </div>
             
-            <div class="gallery-button-container">
-                <a href="Gallery.html" class="btn">View Full Gallery →</a>
+            <div class="gallery-grid">
+                <!-- Game Photos -->
+                <div class="gallery-item" data-category="game">
+                    <img src="imgs/Mason1.jpg" alt="Game action shot">
+                    <div class="gallery-caption">Game vs. Freehold Township</div>
+                </div>
+                <div class="gallery-item" data-category="game">
+                    <img src="imgs/Muhlbach1.jpg" alt="Player shooting">
+                    <div class="gallery-caption">Championship Game Highlight</div>
+                </div>
+                <div class="gallery-item" data-category="game">
+                    <img src="imgs/Shane1.jpg" alt="Defense play">
+                    <div class="gallery-caption">Defensive Showcase</div>
+                </div>
+                <div class="gallery-item" data-category="game">
+                    <img src="imgs/Gellis1.jpg" alt="Midfield action">
+                    <div class="gallery-caption">Midfield Action</div>
+                </div>
+                
+                <!-- Practice Photos -->
+                <div class="gallery-item" data-category="practice">
+                    <img src="imgs/GoodSports.jpg" alt="Practice drill">
+                    <div class="gallery-caption">Spring Training</div>
+                </div>
+                <div class="gallery-item" data-category="practice">
+                    <img src="imgs/Mason1.jpg" alt="Shooting practice">
+                    <div class="gallery-caption">Shooting Drills</div>
+                </div>
+                <div class="gallery-item" data-category="practice">
+                    <img src="imgs/Muhlbach1.jpg" alt="Team huddle">
+                    <div class="gallery-caption">Coach's Strategy Session</div>
+                </div>
+                <div class="gallery-item" data-category="practice">
+                    <img src="imgs/Shane1.jpg" alt="Conditioning">
+                    <div class="gallery-caption">Conditioning Workout</div>
+                </div>
+                
+                <!-- Team Photos -->
+                <div class="gallery-item" data-category="team">
+                    <img src="imgs/GoodSports.jpg" alt="Team photo">
+                    <div class="gallery-caption">2025 Varsity Squad</div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <img src="imgs/Gellis1.jpg" alt="JV team">
+                    <div class="gallery-caption">JV Team 2025</div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <img src="imgs/Mason1.jpg" alt="Seniors group">
+                    <div class="gallery-caption">Senior Players</div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <img src="imgs/Muhlbach1.jpg" alt="Coach and captains">
+                    <div class="gallery-caption">Coach with Team Captains</div>
+                </div>
             </div>
         </div>
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
+    
     <footer>
         <div class="footerContainer">
             <div class="socialIcons">
-                <a onclick="window.open('https://www.instagram.com/marlboroboyslax?igsh=YjMzYXJhYWs5em0w')"><i
-                        class="fa-brands fa-instagram"></i></a>
+                <a onclick="window.open('https://www.instagram.com/marlboroboyslax?igsh=YjMzYXJhYWs5em0w')"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="footerNav">
                 <ul>
@@ -208,5 +164,4 @@
         </div>
     </footer>
 </body>
-
 </html>
