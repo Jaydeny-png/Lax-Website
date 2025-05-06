@@ -18,6 +18,24 @@
     line-height: 1.6;
   }
   
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .container2 {
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  
+  
+  
+  
+  
   /* Updated navbar styles */
   header {
     background-color: var(--primary);
@@ -228,46 +246,219 @@
   
   
   
-
   
   
   
   
   
   
-
-
-body1 {
-    background: url(https://res.cloudinary.com/ritalbradley/image/upload/v1657644013/pexels-elijah-o_donnell-3473569_o7ohfd.jpg)
-    center center/cover no-repeat;
-    min-height: 100vh;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-}
-
-img {
-    width: 450px;
-    height: 300px;
-    margin: 10px;
-    transition-duration: 1s;
-}
-
-img:hover {
-    border: 5px solid #fff;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-filter: none;
-    filter: none;
-}
-
-.container {
+  
+  #home {
+    width: 100%;
+    padding: 3rem;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .home-left {
+    height: 300px;
+    position: relative;
+  }
+  
+  .home-left img {
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .home-right {
+    width: 50%;
+  }
+  
+  .home-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-para {
+    margin-bottom: 20px;
+  }
+  
+  #goal {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .goal-left {
+    width: 60%;
+    line-height: 2rem;
+  }
+  
+  .goal-left h2 {
+    font-size: 2.4rem;
+  }
+  
+  .goal-left p {
+    line-height: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .goal-left ul {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  .goal-left ul li::before {
+    line-height: 1.5rem;
+    content: '✓';
+    color: red;
+  }
+  
+  .goal-right {
+    position: relative;
+    width: 35%;
+  }
+  
+  .goal-right img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: drop-shadow(3px 4px 5px black);
+    transition: all 0.2s linear;
+  }
+  
+  .goal-right img:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(5px 6px 7px black);
+  }
+  
+  /* Our Team */
+  #our-Team {
+    width: 80%;
+    margin: 4rem auto 1rem;
+  }
+  
+  #our-Team h2 {
+    text-align: center;
+    margin: 1rem auto 4rem;
+    position: relative;
+  }
+  
+  #our-Team h2::after {
+    content: '';
+    height: 4px;
+    margin: 0 auto;
+    text-align: center;
+    width: 15%;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    border-radius: 5px;
+    transform: translate(-50%);
+  }
+  
+  .teamContainer {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .team-item {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    margin: 0.5rem;
+  }
+  
+  .team-item h5 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .team-item span {
+    margin-top: .4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(7, 176, 176);
+  }
+  
+  .team-item img {
+    width: 80px;
+  }
+  
+  
+  @media screen and (max-width: 784px) {
+    #list {
+        display: none;
+    }
+  
+  
+  
+    .responsive.active {
+        left: 0%;
+    }
+  
+    .goal-right {
+        width: 100%;
+        margin: 0 auto 2rem;
+    }
+  
+    .goal-left {
+        width: 100%;
+        text-align: center;
+    }
+  
+    #goal {
+        flex-direction: column-reverse;
+    }
+  }
+  
+  @media screen and (max-width: 633px) {
+    #home {
+        flex-direction: column;
+    }
+  
+    .home-left {
+        width: 100%;
+        height: auto;
+    }
+  
+    .home-left img {
+        width: 100%;
+    }
+  
+    .home-right {
+        margin-top: 2rem;
+        width: 100%;
+    }
+  
+    .para {
+        width: 90%;
+    }
+  
+    .num-container {
+        flex-direction: column;
+    }
+  
+    .num-item {
+        margin: 1rem;
+    }
+  
+    .teamContainer {
+        justify-content: center;
+    }
+  }
+  
+  
   
   
   
