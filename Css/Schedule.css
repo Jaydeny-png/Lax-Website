@@ -1,7 +1,7 @@
 :root {
   --primary: #00274D;
   --secondary: #FFCB05;
-  --accent: #FF6B00;
+  --accent: #00274D;
   --light: #f8f9fa;
   --dark: #212529;
 }
@@ -14,10 +14,10 @@
 
 body {
   font-family: 'Montserrat', Arial, sans-serif;
+  background-color: var(--light);
   color: var(--dark);
   line-height: 1.6;
 }
-
 
 .container {
   width: 100%;
@@ -25,16 +25,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.container2 {
-  align-items: center;
-  margin: 0 auto;
-}
-
-
-
-
-
 
 /* Updated navbar styles */
 header {
@@ -236,6 +226,61 @@ nav ul li a:hover, nav ul li a:focus {
 
 .mobile-nav li a:hover, .mobile-nav li a:focus {
   background-color: rgba(255,255,255,0.1);
+}
+
+/* Prevent scrolling when mobile menu is open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Media queries for responsive navbar */
+@media (max-width: 992px) {
+  nav ul li a {
+      padding: 15px 8px;
+      font-size: 12px;
+  }
+  
+  .secondary-nav .right-items {
+      gap: 10px;
+  }
+  
+  .secondary-nav .left-item {
+      margin-right: 20px;
+  }
+  
+  .secondary-nav .left-item:after {
+      right: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+      display: block;
+  }
+  
+  .desktop-nav {
+      /* Preserve the logo in mobile view */
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .desktop-nav .main-nav, .desktop-nav .secondary-nav {
+      display: none;
+  }
+  
+  .desktop-nav .logo-container {
+      display: flex;
+      position: static;
+  }
+}
+
+/* Desktop second navbar alignment */
+@media (min-width: 769px) {
+  .secondary-nav .right-items li:last-child {
+      margin-right: 0;
+  }
 }
 
 

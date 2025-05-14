@@ -286,6 +286,19 @@ body.no-scroll {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero {
     background: linear-gradient(to bottom, rgba(0,39,77,0.8), rgba(0,39,77,0.9)), url('imgs/TeamHalf.png') no-repeat center center;
     background-size: cover;
@@ -363,6 +376,31 @@ body.no-scroll {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .info-columns {
     flex: 1 1 300px;
     max-width: 400px;
@@ -387,37 +425,6 @@ body.no-scroll {
     border-bottom: 2px solid var(--secondary);
     padding-bottom: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .join-box {
     position: relative;
