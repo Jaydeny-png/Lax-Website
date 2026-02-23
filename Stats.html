@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marlboro HS Boys Lacrosse</title>
-    <link rel="stylesheet" href="Css/Varsity.css">
+    <title>Team Stats - Marlboro HS Boys Lacrosse</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script defer src="script3.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -59,7 +60,7 @@
                 <ul>
                     <!-- Primary nav items -->
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="Stats.html"">Stats</a></li>
+                    <li><a href="Stats.html">Stats</a></li>
                     <li><a href="Parents.html">Parents Club</a></li>
                     <li><a href="Schedule.html">Schedule</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
@@ -82,111 +83,49 @@
     <section class="section2" id="section2">
         <div class="container2">
             <div class="row pt-5 justify-content-center">
-                <h1 class="font-main text-center">Varsity Roster</h1>
-                <h3 class="font-main text-center">Varsity roster for the 2025–2026 season</h3>
-                <div class="col-12">
-                    <!-- roster will be injected here by JavaScript -->
-                    <div id="roster-container" class="roster-table-container"></div>
-                    <!-- inline JSON fallback in case fetch fails (e.g. opened via file://) -->
-                    <script id="roster-data" type="application/json">
+                <h1 class="font-main text-center">Team Stats</h1>
+                <div class="col-8">
+                    <div id="stats-container" class="stats-box"></div>
+                    <script id="stats-data" type="application/json">
 {
-  "team": "Marlboro Mustangs",
-  "season": "2025-2026",
-  "sport": "Boys Lacrosse",
+  "record": "10-8",
+  "teamGoals": 211,
+  "teamAssists": 159,
+  "teamPoints": 370,
+  "teamGB": 658,
+  "teamFOSWinPercent": "0.61",
+  "leadingScorers": [
+    { "name": "Tyler Gellis", "goals": 44 },
+    { "name": "Andrew Silvia", "goals": 33 }
+  ],
   "players": [
-    {
-      "number": 2,
-      "name": "Jennaro Percodani",
-      "positions": ["D", "LSM"],
-      "class": "Senior"
-    },
-    {
-      "number": 6,
-      "name": "Jake Sondak",
-      "positions": ["A"],
-      "class": "Junior"
-    },
-    {
-      "number": 11,
-      "name": "Matthew Chuk",
-      "positions": ["M"],
-      "class": "Senior"
-    },
-    {
-      "number": 15,
-      "name": "Brandon Kaiserman",
-      "positions": ["M"],
-      "class": "Senior"
-    },
-    {
-      "number": 16,
-      "name": "Miles Komito",
-      "positions": ["A", "M"],
-      "class": "Senior"
-    },
-    {
-      "number": 18,
-      "name": "Alec Roberman",
-      "positions": ["FOGO"],
-      "class": "Junior"
-    },
-    {
-      "number": 21,
-      "name": "Mason Trombetta",
-      "positions": ["M"],
-      "class": "Senior"
-    },
-    {
-      "number": 25,
-      "name": "Grant Yearling",
-      "positions": ["M"],
-      "class": "Sophomore"
-    },
-    {
-      "number": 31,
-      "name": "Alexander Kurushi",
-      "positions": ["M"],
-      "class": "Senior"
-    },
-    {
-      "number": 45,
-      "name": "Drew Lichtenthal",
-      "positions": ["FOGO", "M", "A"],
-      "class": "Senior"
-    },
-    {
-      "number": 46,
-      "name": "Joshua Levitis",
-      "positions": ["FOGO","M"],
-      "class": "Junior"
-    },
-    {
-      "number": 49,
-      "name": "Hudson Muhlbach",
-      "positions": ["D","LSM"],
-      "class": "Junior"
-    },
-    {
-      "name": "Jacob Bazerman",
-      "positions": ["D"],
-      "class": "Junior"
-    },
-    {
-      "name": "Brayden Gallo",
-      "positions": ["G","A"],
-      "class": "Junior"
-    },
-    {
-      "name": "Dane Mezheritsky",
-      "positions": ["G"],
-      "class": "Junior"
-    },
-    {
-      "name": "Justin Saenz",
-      "positions": ["D"],
-      "class": "Senior"
-    }
-  ]
+    { "name": "Jennaro Percodani", "position": "D, LSM", "class": "Senior" },
+    { "name": "Jake Sondak", "position": "A", "class": "Junior" },
+    { "name": "Matthew Chuk", "position": "M", "class": "Senior" },
+    { "name": "Brandon Kaiserman", "position": "M", "class": "Senior" },
+    { "name": "Miles Komito", "position": "A, M", "class": "Senior" },
+    { "name": "Alec Roberman", "position": "FOGO", "class": "Junior" },
+    { "name": "Mason Trombetta", "position": "M", "class": "Senior" },
+    { "name": "Grant Yearling", "position": "", "class": "Sophomore" },
+    { "name": "Alexander Kurushi", "position": "", "class": "Senior" },
+    { "name": "Danella Mezheritsky", "position": "", "class": "Junior" },
+    { "name": "Drew Lichtenthal", "position": "FOGO", "class": "Senior" },
+    { "name": "Joshua Levitis", "position": "", "class": "Junior" },
+    { "name": "Hudson Muhlbach", "position": "", "class": "Junior" },
+    { "name": "Jacob Bazerman", "position": "", "class": "Junior" },
+    { "name": "Brayden Gallo", "position": "", "class": "Junior" },
+    { "name": "Dane Mezheritsky", "position": "", "class": "Junior" },
+    { "name": "Justin Saenz", "position": "", "class": "" }
+  ],
+  "goalies": [
+    { "name": "Brayden Gallo", "Saves": 169, "GA": 122, "GP": 16 },
+    { "name": "Joshua Levitis", "Saves": 0, "GA": 0, "GP": 1 },
+    { "name": "Jack Lichtenthal", "Saves": 12, "GA": 9, "GP": 5 },
+    { "name": "Dane Mezheritsky", "Saves": 10, "GA": 9, "GP": 5 },
+    { "name": "Hudson Muhlbach", "Saves": 0, "GA": 0, "GP": 1 }
+  ],
+  "nextGame": "Till next season!",
+  "lastUpdated": "2026-02-23T00:00:00Z"
 }
                     </script>
                 </div>
@@ -208,8 +147,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Parents.html">Parents Club</a></li>
                     <li><a href="Schedule.html">Schedule</a></li>
-                    <li><a href="Stats.html">Stats</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Stats.html">Stats</a></li>
                 </ul>
             </div>
         </div>

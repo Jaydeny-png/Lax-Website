@@ -1,0 +1,99 @@
+{
+  "team": "Marlboro Mustangs",
+  "season": "2025-2026",
+  "sport": "Boys Lacrosse",
+  "players": [
+    {
+      "number": 2,
+      "name": "Jennaro Percodani",
+      "positions": ["D", "LSM"],
+      "class": "Senior"
+    },
+    {
+      "number": 6,
+      "name": "Jake Sondak",
+      "positions": ["A"],
+      "class": "Junior"
+    },
+    {
+      "number": 11,
+      "name": "Matthew Chuk",
+      "positions": ["M"],
+      "class": "Senior"
+    },
+    {
+      "number": 15,
+      "name": "Brandon Kaiserman",
+      "positions": ["M"],
+      "class": "Senior"
+    },
+    {
+      "number": 16,
+      "name": "Miles Komito",
+      "positions": ["A", "M"],
+      "class": "Senior"
+    },
+    {
+      "number": 18,
+      "name": "Alec Roberman",
+      "positions": ["FOGO"],
+      "class": "Junior"
+    },
+    {
+      "number": 21,
+      "name": "Mason Trombetta",
+      "positions": ["M"],
+      "class": "Senior"
+    },
+    {
+      "number": 25,
+      "name": "Grant Yearling",
+        "positions": ["M"],
+      "class": "Sophomore"
+    },
+    {
+      "number": 31,
+      "name": "Alexander Kurushi",
+        "positions": ["M"],
+      "class": "Senior"
+    },
+    {
+      "number": 45,
+      "name": "Drew Lichtenthal",
+      "positions": ["FOGO", "M", "A"],
+      "class": "Senior"
+    },
+    {
+      "number": 46,
+      "name": "Joshua Levitis",
+      "positions": ["FOGO","M"],
+      "class": "Junior"
+    },
+    {
+      "number": 49,
+      "name": "Hudson Muhlbach",
+      "positions": ["D","LSM"],
+      "class": "Junior"
+    },
+    {
+      "name": "Jacob Bazerman",
+"positions": ["D"],
+      "class": "Junior"
+    },
+    {
+      "name": "Brayden Gallo",
+      "positions": ["G","A"],
+      "class": "Junior"
+    },
+    {
+      "name": "Dane Mezheritsky",
+      "positions": ["G"],
+      "class": "Junior"
+    },
+    {
+      "name": "Justin Saenz",
+      "positions": ["D"],
+        "class": "Senior"
+    }
+  ]
+}

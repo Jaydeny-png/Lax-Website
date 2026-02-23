@@ -1,6 +1,8 @@
 /* index css */
 /* WARNING! No not put in Css folder things will break */
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
     --primary: #00274D;
     --secondary: #FFCB05;
@@ -402,11 +404,21 @@ body.no-scroll {
 
 
 .info-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    /* side-by-side boxes */
+    flex-direction: row;
+}
+
+/* ensure child boxes share space and shrink if needed */
+.info-columns .info-box {
     flex: 1 1 300px;
-    max-width: 400px;
+    max-width: none; /* allow expansion */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .info-box {
@@ -424,6 +436,55 @@ body.no-scroll {
     font-size: 20px;
     border-bottom: 2px solid var(--secondary);
     padding-bottom: 8px;
+}
+
+/* simple box for stats section */
+.stats-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: auto;
+    overflow: auto;
+}
+
+/* table used for individual stats */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+.stats-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: auto;
+    overflow: auto; /* ensures horizontal scroll if needed */
+}
+
+/* Styling for stats section */
+.section2 {
+    background: #f8fafc;
+    padding: 2rem 0 0 0; /* remove bottom padding to close gap before coaches */
+}
+.container2 {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.stats-table th,
+.stats-table td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    text-align: center;
+}
+.stats-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.stats-table th {
+    background-color: #f3f4f6;
+    font-weight: bold;
 }
 
 .join-box {
@@ -536,16 +597,20 @@ body.no-scroll {
 
 .video-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* never stack, keep all three panels on one line */
     gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start; /* don't stretch children vertically */
     margin-bottom: 40px;
 }
 
+
 .video-container {
-    flex: 1 1 600px;
+    /* make the highlights large but not overwhelming */
+    flex: 3 1 600px;
     max-width: 700px;
- 
+    /* keep a consistent 16:9 ratio so slides don't jump */
+
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(218, 218, 218, 0);
     position: relative;
@@ -554,6 +619,21 @@ body.no-scroll {
     aspect-ratio: 16/9;
 }
 
+/* ensure the right column holds two boxes side by side */
+.info-columns {
+    display: flex;
+    flex-direction: row;
+    /* allow announcement column to take more space */
+    flex: 2 1 100%;
+    gap: 20px;
+    align-items: flex-start; /* don't stretch boxes to equal height */
+}
+
+/* when only a single info-box remains, let it fill the column */
+.info-columns .info-box:only-child {
+    flex: 1 1 100%;
+    max-width: none;
+}
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease;
@@ -562,7 +642,7 @@ body.no-scroll {
 }
 
 .carousel-slide {
-    min-width: 100%;
+    flex: 0 0 100%;        /* force exactly one slide per view */
     height: 100%;
     position: relative;
 }
@@ -570,8 +650,10 @@ body.no-scroll {
 .carousel-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;      /* fill container with consistent cropping */
+    display: block;
 }
+
 
 .slide-caption {
     position: absolute;

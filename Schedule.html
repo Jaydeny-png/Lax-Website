@@ -24,7 +24,7 @@
                 <ul>
                     <div class="left-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="https://highschoolsports.nj.com/school/marlboro-marlboro/boyslacrosse/season/2024-2025/stats" target="_blank">Stats</a></li>
+                        <li><a href="Stats.html">Stats</a></li>
                         <li><a href="Parents.html">Parents Club</a></li>
                     </div>
 
@@ -59,7 +59,7 @@
                 <ul>
                     <!-- Primary nav items -->
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="https://highschoolsports.nj.com/school/marlboro-marlboro/boyslacrosse/season/2024-2025/stats" target="_blank">Stats</a></li>
+                    <li><a href="Stats.html"">Stats</a></li>
                     <li><a href="Parents.html">Parents Club</a></li>
                     <li><a href="Schedule.html">Schedule</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
@@ -69,8 +69,7 @@
                     <li class="divider"></li>
 
                     <!-- Secondary nav items -->
-                    <li><a href="index.html">Boys Lacrosse</a></li>
-                    <li><a href="index.html">Coaches</a></li>
+                    <li><a href="#coaches">Coaches</a></li>
                     <li><a href="Varsity.html">Varsity</a></li>
                     <li><a href="Tryouts.html">JV / Freshman / Tryouts</a></li>
                 </ul>
@@ -83,15 +82,13 @@
     <section class="section2" id="section2">
         <div class="container2">
             <div class="row pt-5 justify-content-center">
-                <h1 class="font-main text-center">Season Schedule</h1>
-                <h3 class="font-main text-center">*NOTE This picture was used for the 2025 season. Click image to go to
-                    offical Shore schedule</h3>
-                <div class="col-8 d-flex justify-content-center">
-                    <a href="https://www.maxpreps.com/nj/marlboro/marlboro-mustangs/lacrosse/schedule/" target="_blank">
-                        <img class="section2-img" src="imgs/Schedule.jpg" alt="Picture of Season Schedule"
-                            onclick="window.open('https://www.maxpreps.com/nj/marlboro/marlboro-mustangs/lacrosse/schedule/', '_blank')">
-
-                    </a>
+                <h1 class="font-main text-center">2025-2026 Season Schedule</h1>
+                <div class="col-8 d-flex justify-content-center flex-wrap" id="schedule-pair">
+                    <!-- Two schedule images side-by-side -->
+                    <img class="section2-img mx-2" src="imgs/2025-2026schedule1.jpg" alt="2025-2026 Schedule Part 1">
+                    
+                    <img class="section2-img mx-2" src="imgs/2025-2026schedule2.jpg" alt="2025-2026 Schedule Part 2">
+                    
                 </div>
             </div>
         </div>
@@ -100,6 +97,12 @@
     <br>
     <br>
     <br>
+
+    <!-- image modal for click-to-zoom -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="enlarged schedule">
+    </div>
 
     <footer>
         <div class="footerContainer">
@@ -112,7 +115,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Parents.html">Parents Club</a></li>
                     <li><a href="Schedule.html">Schedule</a></li>
-                    <li><a href="https://highschoolsports.nj.com/school/marlboro-marlboro/boyslacrosse/season/2024-2025/stats">Stats</a></li>
+                    <li><a href="Stats.html">Stats</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
                 </ul>
             </div>

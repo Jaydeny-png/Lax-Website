@@ -148,7 +148,36 @@ nav ul li a:hover, nav ul li a:focus {
   background-color: rgba(255,255,255,0.1);
   color: var(--secondary);
 }
+/* roster table styling */
+.roster-table-container {
+  overflow-x: auto;
+  padding: 1rem;
+}
 
+.roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+.roster-table th,
+.roster-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.roster-table th {
+  background-color: var(--primary);
+  color: var(--light);
+  position: sticky;
+  top: 0;
+}
+
+.roster-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 /* Mobile menu button */
 .hamburger-menu {
   display: none;
@@ -328,20 +357,6 @@ body.no-scroll {
   }
   
 
-  /* Add this to your Varsity.css file */
-.roster-img {
-    max-width: 100%;  /* Makes the image take up to 90% of its container width */
-    height: auto;     /* Maintains aspect ratio */
-    margin: 0 auto;   /* Centers the image */
-    display: block;   /* Ensures proper margin application */
-}
-
-/* Optional: For large screens, you might want to limit the maximum size */
-@media (min-width: 1200px) {
-    .roster-img {
-        max-width: 1000px; /* Maximum width on large screens */
-    }
-}
 
 
 

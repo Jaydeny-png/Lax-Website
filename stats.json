@@ -1,0 +1,31 @@
+{
+  "record": "0-0",
+  "teamGoals": 0,
+  "teamAssists": 0,
+  "teamPoints": 0,
+  "teamGB": 0,
+  "teamFOSWinPercent": "0.0%",
+  "leadingScorer": [
+    
+  ],
+  "players": [
+    { "name": "Jennaro Percodani", "position": "D, LSM", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Jake Sondak", "position": "A", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Matthew Chuk", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Brandon Kaiserman", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Miles Komito", "position": "A, M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Alec Roberman", "position": "FOGO, M", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Mason Trombetta", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Grant Yearling", "position": "M", "class": "Sophomore", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Alexander Kurushi", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Drew Lichtenthal", "position": "FOGO, M , A", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Joshua Levitis", "position": "FOGO, M", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Hudson Muhlbach", "position": "D, LSM", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Jacob Bazerman", "position": "D", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Justin Saenz", "position": "D", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" }
+  ],
+  "goalies": [
+    { "name": "Brayden Gallo", "Saves": 0, "GA": 0, "GP": 0 },
+    { "name": "Dane Mezheritsky", "Saves": 0, "GA": 0, "GP": 0 }
+  ]
+}
