@@ -16,6 +16,12 @@
       "class": "Junior"
     },
     {
+      "number": 8,
+      "name": "Salvatore Montecalvo",
+      "positions": ["DM"],
+        "class": "Senior"
+    },
+    {
       "number": 11,
       "name": "Matthew Chuk",
       "positions": ["M"],
