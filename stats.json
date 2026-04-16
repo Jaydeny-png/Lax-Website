@@ -1,32 +1,34 @@
 {
-  "record": "0-0",
-  "teamGoals": 0,
-  "teamAssists": 0,
-  "teamPoints": 0,
-  "teamGB": 0,
-  "teamFOSWinPercent": "0.0%",
-  "leadingScorer": [
+  "record": "1-5",
+  "teamGoals": 39,
+  "teamAssists": 35,
+  "teamPoints": 74,
+  "teamGB": 172,
+  "teamFOSWinPercent": "0.39%",
+  "leadingScorer": [Jake Sondak]
     
   ],
   "players": [
-    { "name": "Jennaro Percodani", "position": "D, LSM", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Jake Sondak", "position": "A", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-        { "name": "Salvatore Montecalvo", "position": "DM", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Matthew Chuk", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Brandon Kaiserman", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Miles Komito", "position": "A, M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Alec Roberman", "position": "FOGO, M", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Mason Trombetta", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Grant Yearling", "position": "M", "class": "Sophomore", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Alexander Kurushi", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Drew Lichtenthal", "position": "FOGO, M , A", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Joshua Levitis", "position": "FOGO, M", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Hudson Muhlbach", "position": "D, LSM", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Jacob Bazerman", "position": "D", "class": "Junior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
-    { "name": "Justin Saenz", "position": "D", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" }
+    { "name": "Jennaro Percodani", "position": "D, LSM", "class": "Senior", "G":"5", "A":"4", "P":"9", "GB":"49", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Jake Sondak", "position": "A", "class": "Junior", "G":"12", "A":"14", "P":"26", "GB":"17", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Salvatore Montecalvo", "position": "DM", "class": "Senior", "G":"", "A":"", "P":"", "GB":"", "FOS-Taken":"1", "FOS-Won":"1", "FOS-Win%":"100" },
+    { "name": "Brandon Kaiserman", "position": "M", "class": "Senior", "G":"1", "A":"", "P":"1", "GB":"4", "FOS-Taken":"7", "FOS-Won":"3", "FOS-Win%":".43" },
+    { "name": "Miles Komito", "position": "A, M", "class": "Senior", "G":"3", "A":"3", "P":"6", "GB":"2", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Mason Trombetta", "position": "M", "class": "Senior", "G":"10", "A":"7", "P":"17", "GB":"28", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Grant Yearling", "position": "M", "class": "Sophomore", "G":"2", "A":"3", "P":"5", "GB":"3", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Alexander Kurushi", "position": "M", "class": "Senior", "G":"", "A":"", "P":"", "GB":"3", "FOS-Taken":"2", "FOS-Won":"1", "FOS-Win%":".5" },
+    { "name": "Drew Lichtenthal", "position": "FOGO, M , A", "class": "Senior", "G":"", "A":"2", "P":"2", "GB":"2", "FOS-Taken":"2", "FOS-Won":"1", "FOS-Win%":".5" },
+    { "name": "Hudson Muhlbach", "position": "D, LSM", "class": "Junior", "G":"", "A":"1", "P":"1", "GB":"30", "FOS-Taken":"3", "FOS-Won":"3", "FOS-Win%":"100" },
+    { "name": "Jacob Bazerman", "position": "D", "class": "Junior", "G":"", "A":"", "P":"", "GB":"2", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Brayden Gallo", "position": "A, M", "class": "Junior", "G":"3", "A":"1", "P":"4", "GB":"3", "FOS-Taken":"19", "FOS-Won":"12", "FOS-Win%":".63" },
+    { "name": "Jack  Widmeier ", "position": "A", "class": "Freshman", "G":"3", "A":"2", "P":"5", "GB":"7", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Dylan Herbert ", "position": "FOGO", "class": "Freshman", "G":"", "A":"", "P":"", "GB":"6", "FOS-Taken":"70", "FOS-Won":"21", "FOS-Win%":".3" },
+    { "name": "Dylan Preston ", "position": "D", "class": "Sophomore", "G":"", "A":"", "P":"", "GB":"8", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Sebastian Forgione ", "position": "D", "class": "Junior", "G":"", "A":"", "P":"", "GB":"1", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Nicholas Silacci ", "position": "A,M", "class": "Junior", "G":"", "A":"", "P":"", "GB":"3", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
+    { "name": "Matthew Fulmino ", "position": "A", "class": "Senior", "G":"", "A":"", "P":"", "GB":"4", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
   ],
   "goalies": [
-    { "name": "Brayden Gallo", "Saves": 0, "GA": 0, "GP": 0 },
-    { "name": "Dane Mezheritsky", "Saves": 0, "GA": 0, "GP": 0 }
+    { "name": "Dane Mezheritsky", "Saves": 47, "GA": 48, "GP": 0 }
   ]
 }
