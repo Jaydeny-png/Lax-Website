@@ -5,9 +5,7 @@
   "teamPoints": 74,
   "teamGB": 172,
   "teamFOSWinPercent": "0.39%",
-  "leadingScorer": [Jake Sondak]
-    
-  ],
+  "leadingScorer": [Jake Sondak],
   "players": [
     { "name": "Jennaro Percodani", "position": "D, LSM", "class": "Senior", "G":"5", "A":"4", "P":"9", "GB":"49", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
     { "name": "Jake Sondak", "position": "A", "class": "Junior", "G":"12", "A":"14", "P":"26", "GB":"17", "FOS-Taken":"", "FOS-Won":"", "FOS-Win%":"" },
