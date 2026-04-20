@@ -4,102 +4,196 @@
   "sport": "Boys Lacrosse",
   "players": [
     {
-      "number": 2,
-      "name": "Jennaro Percodani",
-      "positions": ["D", "LSM"],
-      "class": "Senior"
-    },
-    {
-      "number": 6,
-      "name": "Jake Sondak",
-      "positions": ["A"],
-      "class": "Junior"
-    },
-    {
-      "number": 8,
-      "name": "Salvatore Montecalvo",
-      "positions": ["DM"],
-        "class": "Senior"
-    },
-    {
-      "number": 11,
-      "name": "Matthew Chuk",
+      "number": 9,
+      "name": "Jeremy Barenberg",
       "positions": ["M"],
-      "class": "Senior"
+      "class": "Sophomore",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 1,
+      "name": "Jacob Bazerman",
+      "positions": ["D"],
+      "class": "Junior",
+      "ht": "5-11",
+      "wt": "200"
+    },
+    {
+      "number": 12,
+      "name": "Brayden Gallo",
+      "positions": ["A"],
+      "class": "Junior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 23,
+      "name": "Dylan Herbert",
+      "positions": ["FOGO", "M"],
+      "class": "Freshman",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 14,
+      "name": "DeMarco Jordan",
+      "positions": ["M"],
+      "class": "Junior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 3,
+      "name": "Joshua Goldstein",
+      "positions": ["M"],
+      "class": "Senior",
+      "ht": "",
+      "wt": ""
     },
     {
       "number": 15,
       "name": "Brandon Kaiserman",
-      "positions": ["M"],
-      "class": "Senior"
+      "positions": ["DM"],
+      "class": "Senior",
+      "ht": "",
+      "wt": ""
     },
     {
       "number": 16,
       "name": "Miles Komito",
       "positions": ["A", "M"],
-      "class": "Senior"
+      "class": "Senior",
+      "ht": "",
+      "wt": ""
     },
     {
       "number": 18,
-      "name": "Alec Roberman",
+      "name": "Alexander Kurushi",
+      "positions": ["DM"],
+      "class": "Senior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 11,
+      "name": "Drew Lichtenthal",
       "positions": ["FOGO"],
-      "class": "Junior"
+      "class": "Senior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 19,
+      "name": "Fulmino Matthew",
+      "positions": ["M"],
+      "class": "Senior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 10,
+      "name": "Dominick Melfi",
+      "positions": ["M"],
+      "class": "Sophomore",
+      "ht": "5-11",
+      "wt": "155"
+    },
+    {
+      "number": 44,
+      "name": "Dane Mezheritsky",
+      "positions": ["G"],
+      "class": "Junior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 25,
+      "name": "Hudson Muhlbach",
+      "positions": ["LSM", "D"],
+      "class": "Junior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 2,
+      "name": "Jennaro Percodani",
+      "positions": ["D", "LSM"],
+      "class": "Senior",
+      "ht": "5-9",
+      "wt": "175"
+    },
+    {
+      "number": 4,
+      "name": "Dylan Preston",
+      "positions": ["D"],
+      "class": "Sophomore",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 20,
+      "name": "Montecalvo Salvatore",
+      "positions": ["DM"],
+      "class": "Senior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 8,
+      "name": "Forgione Sebastian",
+      "positions": ["D"],
+      "class": "Junior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 5,
+      "name": "Nicholas Silacci",
+      "positions": ["A"],
+      "class": "Junior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 6,
+      "name": "Jake Sondak",
+      "positions": ["A"],
+      "class": "Junior",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 7,
+      "name": "Peter Trezza",
+      "positions": ["M"],
+      "class": "Sophomore",
+      "ht": "",
+      "wt": ""
     },
     {
       "number": 21,
       "name": "Mason Trombetta",
       "positions": ["M"],
-      "class": "Senior"
+      "class": "Senior",
+      "ht": "5-9",
+      "wt": "155"
     },
     {
-      "number": 25,
+      "number": 22,
+      "name": "Jack Widmeier",
+      "positions": ["A", "M"],
+      "class": "Freshman",
+      "ht": "",
+      "wt": ""
+    },
+    {
+      "number": 28,
       "name": "Grant Yearling",
-        "positions": ["M"],
-      "class": "Sophomore"
-    },
-    {
-      "number": 31,
-      "name": "Alexander Kurushi",
-        "positions": ["M"],
-      "class": "Senior"
-    },
-    {
-      "number": 45,
-      "name": "Drew Lichtenthal",
-      "positions": ["FOGO", "M", "A"],
-      "class": "Senior"
-    },
-    {
-      "number": 46,
-      "name": "Joshua Levitis",
-      "positions": ["FOGO","M"],
-      "class": "Junior"
-    },
-    {
-      "number": 49,
-      "name": "Hudson Muhlbach",
-      "positions": ["D","LSM"],
-      "class": "Junior"
-    },
-    {
-      "name": "Jacob Bazerman",
-"positions": ["D"],
-      "class": "Junior"
-    },
-    {
-      "name": "Brayden Gallo",
-      "positions": ["G","A"],
-      "class": "Junior"
-    },
-    {
-      "name": "Dane Mezheritsky",
-      "positions": ["G"],
-      "class": "Junior"
-    },
-    {
-      "name": "Justin Saenz",
-      "positions": ["D"],
-        "class": "Senior"
+      "positions": ["M", "A"],
+      "class": "Sophomore",
+      "ht": "",
+      "wt": ""
     }
   ]
 }
